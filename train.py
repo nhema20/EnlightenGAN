@@ -1,5 +1,5 @@
 import time
-from options.train_options import TrainOptions
+from options.train_options import C:\Users\N.HEMA\Downloads\LOLdataset\our485\low
 from data.data_loader import CreateDataLoader
 from models.models import create_model
 from util.visualizer import Visualizer
@@ -9,7 +9,7 @@ def get_config(config):
     with open(config, 'r') as stream:
         return yaml.load(stream)
 
-opt = TrainOptions().parse()
+opt = C:\Users\N.HEMA\Downloads\LOLdataset\our485\low().parse()
 config = get_config(opt.config)
 data_loader = CreateDataLoader(opt)
 dataset = data_loader.load_data()
